@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*token*.json
+.ipynb_checkpoints/
