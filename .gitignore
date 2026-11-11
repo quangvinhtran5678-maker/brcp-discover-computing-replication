@@ -1,7 +1,15 @@
+# Source data are downloaded from their official distributors, not checked into this repository.
+data/raw/
+original_data/
+Class-1/
+*.egg-info/
 __pycache__/
 *.pyc
-.env
-.env.*
-*.key
-*token*.json
 .ipynb_checkpoints/
+*.env
+.env*
+*.key
+*credentials*.json
+*token*.json
+.DS_Store
+*.log
