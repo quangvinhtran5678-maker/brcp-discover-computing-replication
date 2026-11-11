@@ -1,0 +1,13 @@
+Split: 6 dev and 108 evaluation streams
+Development-only chosen eta,KI: 0.1 0.0
+Evaluation completed 18 / 108
+Evaluation completed 36 / 108
+Evaluation completed 54 / 108
+Evaluation completed 72 / 108
+Evaluation completed 90 / 108
+Evaluation completed 108 / 108
+          n_series  coverage_pid  coverage_brcp  coverage_aci  winkler_ratio_pid_aci  winkler_ratio_pid_brcp  zero_radius  tangent_caps
+kind                                                                                                                                   
+level           36      0.896299       0.900700      0.898189               0.969021                0.962692         1094             0
+none            36      0.896362       0.900140      0.898149               0.971509                0.957534         1508             0
+variance        36      0.892680       0.899712      0.895993               1.065069                1.050701         1059             0

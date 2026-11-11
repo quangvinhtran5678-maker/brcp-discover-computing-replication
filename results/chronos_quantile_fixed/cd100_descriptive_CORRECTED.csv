@@ -1,0 +1,19 @@
+kind,method,cd100,n_channels,post100_mean_miss,note
+level,SplitCP,6.888888888888889,36,0.16887962962962969,exploratory; 100 offsets before pulse termination at 120
+level,RollingCP,4.238888888888889,36,0.13662962962962963,exploratory; 100 offsets before pulse termination at 120
+level,ACI(0.005),3.8064814814814816,36,0.12774074074074074,exploratory; 100 offsets before pulse termination at 120
+level,ACI(0.05),2.2101851851851855,36,0.10656481481481485,exploratory; 100 offsets before pulse termination at 120
+level,AgACI,2.6972222222222224,36,0.11417592592592593,exploratory; 100 offsets before pulse termination at 120
+level,ConformalPID,2.8796296296296298,36,0.11587037037037039,exploratory; 100 offsets before pulse termination at 120
+level,BRCP,2.6601851851851848,36,0.1094814814814815,exploratory; 100 offsets before pulse termination at 120
+level,BRCP-safe,2.628703703703703,36,0.10894444444444444,exploratory; 100 offsets before pulse termination at 120
+level,BRCP-data,3.1435185185185186,36,0.11825000000000002,exploratory; 100 offsets before pulse termination at 120
+variance,SplitCP,60.45462962962963,36,0.7045462962962962,exploratory; 100 offsets before pulse termination at 120
+variance,RollingCP,39.631481481481494,36,0.4963148148148148,exploratory; 100 offsets before pulse termination at 120
+variance,ACI(0.005),17.036111111111108,36,0.2633425925925926,exploratory; 100 offsets before pulse termination at 120
+variance,ACI(0.05),6.2666666666666675,36,0.1606944444444445,exploratory; 100 offsets before pulse termination at 120
+variance,AgACI,7.514814814814816,36,0.17397222222222222,exploratory; 100 offsets before pulse termination at 120
+variance,ConformalPID,22.731481481481485,36,0.32731481481481484,exploratory; 100 offsets before pulse termination at 120
+variance,BRCP,4.581481481481482,36,0.13833333333333336,exploratory; 100 offsets before pulse termination at 120
+variance,BRCP-safe,4.378703703703704,36,0.1333703703703704,exploratory; 100 offsets before pulse termination at 120
+variance,BRCP-data,8.276851851851852,36,0.1768703703703704,exploratory; 100 offsets before pulse termination at 120

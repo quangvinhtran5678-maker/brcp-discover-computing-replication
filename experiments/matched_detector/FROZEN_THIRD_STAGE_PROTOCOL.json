@@ -1,0 +1,13 @@
+{
+  "stage": "exploratory third-stage after two inspected tests",
+  "known_null": "stationary Gaussian AR1 phi=0.6",
+  "dev_threshold_origin": "1200-seed development only from SECOND-stage stability analysis",
+  "score_h": 5.0,
+  "data_h": 13.0,
+  "seed_base": 820210001,
+  "n_test": 1000,
+  "shift_tau": 650,
+  "first_120_steps_for_power": true,
+  "hypotheses": "descriptive comparisons, no unconditional superiority claim",
+  "no_reselection": "fix thresholds before new-seed test; publish all outcomes"
+}

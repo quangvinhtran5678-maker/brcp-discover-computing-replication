@@ -1,0 +1,226 @@
+### MC tolerance eps = 0.0424264068711928
+
+### TABLE 2 : CD at mag=3 (+ no-break control)
+break_type    level  variance   trend  season     ar  predictability  slow_drift  none  mean(breaks)
+method                                                                                              
+SplitCP       20.67     87.15  134.69   53.55  23.09           50.13        3.58  0.02         53.27
+RollingCP      7.95     36.11  110.10   26.30   9.77           22.13        1.52  0.00         30.55
+ACI(0.005)     4.15     12.02   14.69   11.46   3.55            8.58        0.51  0.02          7.85
+ACI(0.05)      1.15      2.81    9.05    5.76   0.35            1.60        0.09  0.02          2.97
+AgACI          3.10      4.93    6.95    7.60   1.66            4.20        0.59  0.02          4.15
+ConformalPID   1.62      7.43   17.67    6.85   0.66            2.87        0.14  0.01          5.32
+BRCP           1.41      1.85    2.72    5.58   0.41            1.62        0.42  0.13          2.00
+OracleCP       0.76      1.22    2.98    3.06   0.86            1.04        0.84  0.78          1.54
+
+### TABLE 3 : TTR-C strict / marginal at mag=3
+-- TTRC
+break_type       ar  level  predictability  season  slow_drift  trend  variance
+method                                                                         
+SplitCP         inf    inf             inf     inf        20.0    inf       inf
+RollingCP     271.0  228.0           249.0     inf        20.0    inf     308.0
+ACI(0.005)    138.0   94.0            89.0     inf         0.0  161.0      62.0
+ACI(0.05)      69.0   42.0            84.0     inf        62.0    inf      84.0
+AgACI         142.0   75.0            69.0     inf        20.0    inf      74.0
+ConformalPID   71.0   20.0            63.0     inf        22.0    inf     162.0
+BRCP           82.0   66.0            20.0     inf       161.0    inf      10.0
+OracleCP        7.0    2.0             7.0    17.0         7.0   22.0       7.0
+-- TTRC_marg
+break_type       ar  level  predictability  season  slow_drift  trend  variance
+method                                                                         
+SplitCP         inf    inf             inf     inf         0.0    inf       inf
+RollingCP     155.0  125.0           194.0   185.0         0.0    inf     199.0
+ACI(0.005)     73.0   30.0            68.0    62.0         0.0   83.0      44.0
+ACI(0.05)       0.0    1.0            12.0     8.0         0.0    inf      25.0
+AgACI          32.0   18.0            33.0    29.0         0.0   82.0      31.0
+ConformalPID   16.0    4.0            28.0    17.0         0.0    inf      66.0
+BRCP            4.0    1.0             5.0     5.0         0.0   32.0       3.0
+OracleCP        1.0    0.0             0.0     2.0         0.0    2.0       0.0
+
+### TABLE 4 : Winkler (post-break) at mag=3, relative to BR-CP (%)
+break_type       ar  level  predictability  season  slow_drift   trend  variance
+method                                                                          
+SplitCP       23.51   9.34           41.25   44.27        3.73  604.00     93.65
+RollingCP      6.05  -1.21            2.88    3.09       -2.48   59.07      9.32
+ACI(0.005)     4.05  -1.60            0.03    0.28       -2.70    0.39      2.30
+ACI(0.05)     -3.18   0.83            1.10    0.81        0.59    1.75      2.44
+AgACI         -2.26  -1.36           -0.13    0.12       -2.54    0.10      1.43
+ConformalPID  -0.69  -0.97           -2.24   -1.06       -1.19    1.39     -1.07
+BRCP           0.00   0.00            0.00    0.00        0.00    0.00      0.00
+OracleCP       2.78  -0.44           -1.58   -0.96       -1.23   -0.37     -1.49
+
+### mean width relative to BR-CP (%) at mag=3
+break_type       ar  level  predictability  season  slow_drift  trend  variance
+method                                                                         
+SplitCP      -24.39 -20.03          -41.26  -35.22      -14.69 -83.47    -59.69
+RollingCP     -2.71  -3.48           -8.57   -6.75       -3.50 -15.92    -11.52
+ACI(0.005)     4.57   1.14            2.47    1.46        0.65   0.11      4.00
+ACI(0.05)      0.25   3.55            3.69    2.66        4.32  -1.60      3.90
+AgACI         -1.94   1.09            2.33    1.21       -0.16   0.03      3.03
+ConformalPID   1.51   1.52           -0.76    0.24        2.04  -4.02     -2.99
+BRCP           0.00   0.00            0.00    0.00        0.00   0.00      0.00
+OracleCP       4.64   2.40            2.15    1.44        2.18   0.35      2.50
+
+### marginal coverage (target .90)
+              cov_all
+method               
+SplitCP        0.6676
+RollingCP      0.8073
+ACI(0.005)     0.8958
+ACI(0.05)      0.8882
+AgACI          0.8926
+ConformalPID   0.8803
+BRCP           0.8869
+OracleCP       0.8982
+break_type       ar  level  predictability  season  slow_drift  trend  variance
+method                                                                         
+SplitCP       0.777  0.798           0.680   0.671       0.829  0.272     0.541
+RollingCP     0.877  0.883           0.862   0.863       0.884  0.386     0.843
+ACI(0.005)    0.900  0.900           0.899   0.899       0.898  0.874     0.899
+ACI(0.05)     0.896  0.898           0.896   0.896       0.899  0.832     0.894
+AgACI         0.889  0.899           0.897   0.897       0.894  0.874     0.896
+ConformalPID  0.897  0.897           0.893   0.894       0.897  0.793     0.884
+BRCP          0.889  0.890           0.889   0.890       0.887  0.872     0.889
+OracleCP      0.902  0.901           0.901   0.901       0.900  0.882     0.901
+
+### CD averaged over the three magnitudes, per method
+                 CD
+method             
+SplitCP       52.15
+RollingCP     29.57
+ACI(0.005)     7.47
+ACI(0.05)      2.83
+AgACI          4.00
+ConformalPID   5.36
+BRCP           1.92
+OracleCP       1.52
+
+### scaling with magnitude (CD), variance break
+mag             2.0    3.0     4.0
+method                            
+SplitCP       52.61  87.15  106.66
+RollingCP     22.91  36.11   42.16
+ACI(0.005)     8.85  12.02   13.18
+ACI(0.05)      1.69   2.81    3.22
+AgACI          4.45   4.93    5.16
+ConformalPID   3.16   7.43   11.98
+BRCP           1.56   1.85    2.01
+OracleCP       1.05   1.22    1.31
+
+
+### FRONTIER
+ gamma      CD   CD_lo   CD_hi  null_width  null_cov  null_cov_sd  break_width
+ 0.001 26.3429 26.0647 27.0731      3.4233    0.9025       0.0426       8.2476
+ 0.002 20.5001 20.2365 21.1016      3.4169    0.9017       0.0424       8.6090
+ 0.005 12.0215 11.8052 12.4907      3.4139    0.9005       0.0415       8.7917
+ 0.010  7.0675  6.8534  7.3674      3.4222    0.9004       0.0387       8.7740
+ 0.020  3.8965  3.7954  4.1821      3.4395    0.9003       0.0345       8.7541
+ 0.050  2.8078  2.9494  3.4335      3.5139    0.8994       0.0262       8.7833
+ 0.100  5.0015  5.2177  5.7606      3.5612    0.8944       0.0204       8.7396
+ 0.200 10.4736 10.6961 11.3111      3.5503    0.8802       0.0197       8.5439
+
+### ABLATION
+-- CD
+break_type    level   none  predictability  slow_drift  variance
+method                                                          
+BRCP          1.409  0.126           1.622       0.425     1.851
+BRCP-binary   1.554  0.038           1.732       0.267     1.861
+BRCP-noinfl   1.441  0.133           1.732       0.460     1.876
+BRCP-noboost  1.336  0.088           1.501       0.277     1.811
+BRCP-rank     1.474  0.050           1.774       0.151     2.464
+BRCP-noreset  2.445  0.133           4.158       0.548     6.054
+BRCP-data     0.916  0.025           0.888       0.005     1.601
+-- TTRC
+break_type    level  none  predictability  slow_drift  variance
+method                                                         
+BRCP           66.0   0.0            20.0       161.0      10.0
+BRCP-binary    66.0   0.0            22.0       161.0      10.0
+BRCP-noinfl    62.0  39.0            22.0       323.0      20.0
+BRCP-noboost   10.0   0.0            11.0       161.0       8.0
+BRCP-rank      11.0   0.0            22.0        22.0      13.0
+BRCP-noreset  108.0   0.0           116.0       163.0     116.0
+BRCP-data       4.0  20.0            20.0        34.0      10.0
+-- n_alarms
+break_type    level   none  predictability  slow_drift  variance
+method                                                          
+BRCP          1.395  0.460           1.735       1.555     1.595
+BRCP-binary   1.395  0.460           1.735       1.555     1.595
+BRCP-noinfl   1.395  0.460           1.735       1.555     1.595
+BRCP-noboost  1.395  0.460           1.735       1.555     1.595
+BRCP-rank     1.465  0.575           1.690       1.380     1.640
+BRCP-noreset  1.395  0.460           1.735       1.555     1.595
+BRCP-data     6.270  6.000           7.150       6.890     5.885
+-- width_all
+break_type    level   none  predictability  slow_drift  variance
+method                                                          
+BRCP          4.261  3.376           5.793       3.994     8.453
+BRCP-binary   4.259  3.409           5.790       4.030     8.501
+BRCP-noinfl   4.267  3.380           5.818       3.994     8.498
+BRCP-noboost  4.340  3.409           5.912       4.075     8.574
+BRCP-rank     4.335  3.463           5.894       4.059     8.620
+BRCP-noreset  4.275  3.376           5.773       3.982     8.424
+BRCP-data     4.511  3.608           6.215       4.271     8.915
+-- winkler_post
+break_type    level   none  predictability  slow_drift  variance
+method                                                          
+BRCP          5.733  4.313           8.591       5.295    13.232
+BRCP-binary   5.725  4.295           8.593       5.278    13.214
+BRCP-noinfl   5.736  4.313           8.598       5.294    13.265
+BRCP-noboost  5.733  4.318           8.550       5.287    13.141
+BRCP-rank     5.755  4.341           8.604       5.290    13.315
+BRCP-noreset  5.742  4.304           8.650       5.272    13.492
+BRCP-data     5.875  4.511           8.818       5.455    13.591
+
+### DETECTOR ARM
+          arm     break_type     method  CD_tol  TTRC  alarms  width_all  width_post  winkler_post  cov_all
+benign(RevIN)          level  ACI(0.05)   1.021  18.0   0.000      3.643       3.663         4.617    0.900
+benign(RevIN)          level       BRCP   1.284  18.0   0.815      3.505       3.517         4.578    0.891
+benign(RevIN)          level   OracleCP   0.735   2.0   1.000      3.655       3.742         4.658    0.901
+benign(RevIN)          level  BRCP-data   0.828   3.0   6.270      3.767       3.792         4.759    0.901
+benign(RevIN)          level BRCP-sdiff   0.956   4.0   4.490      3.682       3.717         4.728    0.896
+benign(RevIN)           none  ACI(0.05)   0.015   0.0   0.000      3.600       3.593         4.507    0.900
+benign(RevIN)           none       BRCP   0.073   0.0   0.520      3.463       3.452         4.436    0.893
+benign(RevIN)           none   OracleCP   0.676   7.0   1.000      3.555       3.578         4.469    0.901
+benign(RevIN)           none  BRCP-data   0.020   0.0   6.000      3.710       3.696         4.628    0.900
+benign(RevIN)           none BRCP-sdiff   0.043  58.0   3.695      3.619       3.613         4.574    0.897
+    invisible predictability  ACI(0.05)   1.597  84.0   0.000      6.009       6.842         8.686    0.896
+    invisible predictability       BRCP   1.622  20.0   1.735      5.794       6.602         8.591    0.889
+    invisible predictability   OracleCP   1.043   7.0   1.000      5.920       6.786         8.456    0.901
+    invisible predictability  BRCP-data   0.883  20.0   7.150      6.215       7.068         8.818    0.901
+    invisible predictability BRCP-sdiff   1.114  22.0   5.500      6.170       7.024         8.775    0.900
+
+### TESTS
+cells (of 21) where BR-CP significantly better on early miscoverage (Holm p<.05):
+baseline
+ACI(0.005)      17
+ACI(0.05)        9
+AgACI           17
+ConformalPID    13
+RollingCP       17
+SplitCP         17
+
+Winkler post-break: mean diff (baseline - BRCP) and two-sided p, mag=3
+break_type       ar  level  predictability  season  slow_drift    trend  variance
+baseline                                                                         
+ACI(0.005)    0.249 -0.092           0.003   0.020      -0.143    0.094     0.304
+ACI(0.05)    -0.196  0.048           0.094   0.058       0.031    0.422     0.323
+AgACI        -0.139 -0.078          -0.011   0.008      -0.134    0.024     0.189
+ConformalPID -0.043 -0.055          -0.192  -0.076      -0.063    0.334    -0.142
+RollingCP     0.372 -0.069           0.248   0.222      -0.131   14.230     1.233
+SplitCP       1.446  0.535           3.544   3.179       0.198  145.514    12.392
+
+### DETECTOR TUNING (selected)
+{
+ "k": 0.65,
+ "h": 6.0,
+ "arl0": 1882.3529411764705,
+ "level": 17.86842105263158,
+ "level_missrate": 0.05,
+ "variance": 12.8,
+ "variance_missrate": 0.0,
+ "predictability": 11.175,
+ "predictability_missrate": 0.0
+}
+
+### META
+{'n_seeds': 200, 'cd_horizon': 200, 'early': 50, 'n_boot': 2000, 'numpy': '2.4.4', 'python': '3.12.3'}
+{'T': 1800, 'tau': 1200, 'fit_end': 600, 'warm_start': 600, 'eval_start': 1000, 'alpha': 0.1, 'period': 24, 'lags': 24, 'window': 300, 'horizon': 500, 'pre_offsets': 150, 'forecaster': 'frozen_ar', 'instance_norm': False}

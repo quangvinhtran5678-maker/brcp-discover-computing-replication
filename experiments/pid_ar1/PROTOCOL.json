@@ -1,0 +1,40 @@
+{
+  "study_type": "EXPLORATORY_POSTHOC_CPU_CHECKPOINT_ADDON",
+  "protocol_created_before_run": true,
+  "created_date": "2026-11-11",
+  "checkpoint": "amazon/chronos-bolt-small",
+  "model_revision": "772f3d25d38aec6d914c8949dab4462e2d46f5d8",
+  "forecast_cache": "BRCP_Chronos_Bolt_GPU_Confirm_2026-11-11-20261111T035612Z-1-001.zip",
+  "splits": {
+    "development": "col000 no-break channel of each of 6 datasets (6 streams), as supplied in cache",
+    "evaluation": "col001 through col006 of each of 6 datasets, each of three scenarios",
+    "warning": "Development and evaluation share dataset families/time sources; channel disjoint only, not independent domain holdout.",
+    "amendment": "Before any metric run, cache enumerator found only 6 col000 cases; no col000 injected-break caches. Amended from intended 18 to available 6 unperturbed development streams; no test metrics were inspected."
+  },
+  "warm": 300,
+  "alpha": 0.1,
+  "candidate_eta": [
+    0.01,
+    0.03,
+    0.1
+  ],
+  "candidate_KI": [
+    0.0,
+    0.1,
+    0.25
+  ],
+  "Csat": 40.0,
+  "ar1_window": 300,
+  "scorecaster": "causal 300-point rolling OLS AR(1), fit only scores observed strictly before prediction; phi clamped to [-0.95,0.95]",
+  "selected_by": "development macro average of within-stream normalized Winkler score on six unperturbed col000 channels; tie-break lower eta then KI",
+  "primary_evaluation": [
+    "coverage",
+    "interval_score",
+    "within-stream interval_score ratio versus ACI(0.05) and BRCP"
+  ],
+  "secondary_evaluation": [
+    "CD100 on 120-step injected break windows; window [tau,tau+100), no second boundary"
+  ],
+  "interpretation": "PID with independently trained AR(1) scorecaster using published P + saturating I + scorecasting architecture; not source-identical author's ThetaModel implementation; no original zero-shot-disjointness claim",
+  "no_gpu": true
+}

@@ -1,0 +1,1 @@
+{"row": {"case": "exchange_col003_none", "dataset": "exchange", "col_idx": 3, "kind": "none", "method": "SAOCP_score_port", "n_eval": 7032, "coverage": 0.9075654152445961, "width": 0.020570124976237083, "winkler": 0.02796023096177169, "n_events": 0}, "events": []}

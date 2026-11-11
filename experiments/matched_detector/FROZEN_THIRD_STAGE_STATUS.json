@@ -1,0 +1,6 @@
+{
+  "n": 1000,
+  "null_alarm_gap": 0.03200000000000003,
+  "null_matched_under_second_stage_tol_0p15": true,
+  "note": "third-stage exploratory follow-up after seeing first and second results, not preregistered overall"
+}

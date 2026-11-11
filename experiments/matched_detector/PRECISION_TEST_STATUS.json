@@ -1,0 +1,18 @@
+{
+  "n_dev": 1200,
+  "n_test": 900,
+  "selected_h": {
+    "data": 13.0,
+    "score": 5.0
+  },
+  "data_per800": 0.4822222222222222,
+  "score_per800": 0.5344444444444445,
+  "gap_score_minus_data": 0.052222222222222225,
+  "abs_gap": 0.052222222222222225,
+  "ci95": [
+    -0.017805555555555547,
+    0.12222222222222222
+  ],
+  "test_pass": true,
+  "label": "SECOND exploratory calibration stability audit; known stationary synthetic null; not TSFM or full baseline"
+}

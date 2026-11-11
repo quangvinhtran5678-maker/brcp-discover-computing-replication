@@ -1,0 +1,9 @@
+{
+  "study_type":"EXPLORATORY_POSTHOC_SCORE_PORT",
+  "source":"Salesforce official online_conformal/saocp.py Apache-2.0; adapted to scores-only without Merlion BasePredictor",
+  "url":"https://github.com/salesforce/online_conformal/blob/main/online_conformal/saocp.py",
+  "hyperparameters":{"alpha":0.10,"lifetime":8,"horizon":1,"max_scale":"sqrt(3) * max(abs(warm calibration scores))", "warm":300},
+  "split":"36 col001-006 channels each with 3 scenarios; original Chronos predictions preserved",
+  "measurement":"same 108 streams, paired ACI and BRCP from corrected replay; mean score/coverage  and dataset-level cluster bootstrap",
+  "classification":"adaptation of published SAOCP score-only update, not a direct import/test of reference package; exploratory, not prior prospectively registered"
+}

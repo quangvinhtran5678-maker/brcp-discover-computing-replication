@@ -1,0 +1,97 @@
+{
+  "config": {
+    "alpha": 0.1,
+    "batch": 24,
+    "context": 256,
+    "data_root": "/content/drive/MyDrive/BRCP_Recovery_2026-11-10/Class-1",
+    "datasets": [
+      "ETTh1",
+      "ETTh2",
+      "ETTm1",
+      "ETTm2",
+      "exchange",
+      "illness"
+    ],
+    "gap": 1000,
+    "h_candidates": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20
+    ],
+    "horizon_cd": 150,
+    "k": 0.8,
+    "kinds": [
+      "none",
+      "level",
+      "variance"
+    ],
+    "magnitude": 3.0,
+    "max_cols_per_dataset": 7,
+    "max_rows": 12000,
+    "model": "amazon/chronos-bolt-small",
+    "output_root": "/content/drive/MyDrive/BRCP_Chronos_Bolt_GPU_Confirm_2026-11-11",
+    "pre": 100,
+    "seed": 20261111,
+    "segment": 120,
+    "target_alarms_per800": 0.5,
+    "test_rate_tolerance_per800": 0.15,
+    "warm": 300,
+    "window": 300
+  },
+  "dev_selected_h": {
+    "data": 20.0,
+    "score": 10.0
+  },
+  "dev_series": [
+    "ETTh1_col000_none",
+    "ETTh2_col000_none",
+    "ETTm1_col000_none",
+    "ETTm2_col000_none",
+    "exchange_col000_none",
+    "illness_col000_none"
+  ],
+  "finished_utc": "2026-11-11T03:52:42.627671+00:00",
+  "gpu": "NVIDIA L4",
+  "input_source_hashes": {
+    "ETTh1": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+    "ETTh2": "a3dc2c597b9218c7ce1cd55eb77b283fd459a1d09d753063f944967dd6b9218b",
+    "ETTm1": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e",
+    "ETTm2": "db973ca252c6410a30d0469b13d696cf919648d0f3fd588c60f03fdbdbadd1fd",
+    "exchange": "48b4d9d3d508f5104162e85b9a6042e3557fde11aa9f2944eba8c0d0efc89842",
+    "illness": "93601f64d2566dc796ca4305adad8b8560c2db1a1ff04543c3bd813a7263570a"
+  },
+  "intended_methods": [
+    "SplitCP",
+    "RollingCP",
+    "ACI(0.005)",
+    "ACI(0.05)",
+    "AgACI",
+    "ConformalPID",
+    "BRCP",
+    "BRCP-safe",
+    "BRCP-data"
+  ],
+  "last_complete": "illness_col006_variance",
+  "last_utc": "2026-11-11T03:52:41.899177+00:00",
+  "method_row_expected": 972,
+  "model_revision": "772f3d25d38aec6d914c8949dab4462e2d46f5d8",
+  "n_method_rows": 972,
+  "n_series_scenarios_complete": 108,
+  "note": "Published frozen Chronos-Bolt inference; model training corpus disjointness NOT independently established. Injection creates known tau; no breaks in natural series are claimed.",
+  "phase": "started",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "stage": "completed",
+  "started_utc": "2026-11-11T03:31:52.645247+00:00",
+  "test_detector_rates": {
+    "data_per800": 3.6829644105377883,
+    "n_series": 36,
+    "score_per800": 0.4860510854723339,
+    "status": "UNMATCHED: cannot assert matched test false-alarm",
+    "tolerance_per800": 0.15
+  }
+}

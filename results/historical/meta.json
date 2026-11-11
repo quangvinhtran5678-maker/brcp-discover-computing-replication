@@ -1,0 +1,57 @@
+{
+  "n_seeds": 200,
+  "cd_horizon": 200,
+  "early": 50,
+  "n_boot": 2000,
+  "breaks": [
+    "level",
+    "variance",
+    "trend",
+    "season",
+    "ar",
+    "predictability",
+    "slow_drift"
+  ],
+  "mags": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "methods": [
+    "SplitCP",
+    "RollingCP",
+    "ACI(0.005)",
+    "ACI(0.05)",
+    "AgACI",
+    "ConformalPID",
+    "BRCP",
+    "OracleCP"
+  ],
+  "ablations": [
+    "BRCP",
+    "BRCP-data",
+    "BRCP-rank",
+    "BRCP-binary",
+    "BRCP-noreset",
+    "BRCP-noinfl",
+    "BRCP-noboost"
+  ],
+  "config": {
+    "T": 1800,
+    "tau": 1200,
+    "fit_end": 600,
+    "warm_start": 600,
+    "eval_start": 1000,
+    "alpha": 0.1,
+    "period": 24,
+    "lags": 24,
+    "window": 300,
+    "horizon": 500,
+    "pre_offsets": 150,
+    "forecaster": "frozen_ar",
+    "instance_norm": false
+  },
+  "numpy": "2.4.4",
+  "python": "3.12.3",
+  "runtime_s": 17.2
+}

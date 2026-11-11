@@ -1,0 +1,27 @@
+{
+  "input_model_revision": "772f3d25d38aec6d914c8949dab4462e2d46f5d8",
+  "input_gpu": "NVIDIA L4",
+  "input_source_hashes": {
+    "ETTh1": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+    "ETTh2": "a3dc2c597b9218c7ce1cd55eb77b283fd459a1d09d753063f944967dd6b9218b",
+    "ETTm1": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e",
+    "ETTm2": "db973ca252c6410a30d0469b13d696cf919648d0f3fd588c60f03fdbdbadd1fd",
+    "exchange": "48b4d9d3d508f5104162e85b9a6042e3557fde11aa9f2944eba8c0d0efc89842",
+    "illness": "93601f64d2566dc796ca4305adad8b8560c2db1a1ff04543c3bd813a7263570a"
+  },
+  "development_thresholds": {
+    "score": 10,
+    "data": 500
+  },
+  "test_empirical_alarm_rates": {
+    "BRCP": 0.4860510854723339,
+    "BRCP-data": 0.5637190424292533,
+    "diff_per800": 0.07766795695691942,
+    "tolerance": 0.15,
+    "status": "matched empirical alarm rates within tolerance; not a true FPR guarantee"
+  },
+  "n_method_rows": 972,
+  "n_series_scenarios": 108,
+  "source_digest": "e88b302372ad1ef17dbaef7656515dff9c6790e3b979cac55b767cadb86fb93f",
+  "warning": "Post-hoc methodological/code repair; no fresh hold-out; not a final confirmatory study"
+}

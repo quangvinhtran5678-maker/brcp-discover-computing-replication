@@ -1,0 +1,14 @@
+{
+  "source_zip_sha256": "bb0c3e1527ce04857cdaa9bc1f4bf621f91986297ba4c45df1efe61f9bc17a9e",
+  "baseline_sha256": "7defdbd1532740d32e9dac9437df9d8b0b52320ff102123696945ee13f476d60",
+  "n_dev_streams": 6,
+  "n_test_streams": 108,
+  "selected_params": {
+    "eta": 0.1,
+    "KI": 0.0,
+    "chosen_by": "minimum mean normalized Winkler across 6 unperturbed dev streams",
+    "review": "posthoc_exploratory"
+  },
+  "script_sha256": "35aa89b1a94647710fb6e991bd970447ff976bbbfd84cd551951433a34e3eb1c",
+  "scientific_restrictions": "Exploratory posthoc; compares one AR1 PID scorecaster, not exact authors Theta baseline; no global performance superiority."
+}

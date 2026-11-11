@@ -1,0 +1,15 @@
+scenario space    n  alarms_per800  post_hit_prob  median_delay
+   level  data 1000          1.656          0.974          17.0
+   level score 1000          1.432          0.687          44.0
+    null  data 1000          0.492          0.077          62.0
+    null score 1000          0.524          0.075          66.0
+variance  data 1000          1.652          0.977          17.0
+variance score 1000          1.586          0.984           3.0
+scenario      measure  mean_diff     lo     hi
+    null total_alarms      0.032 -0.027  0.093
+    null     post_hit     -0.002 -0.025  0.020
+   level total_alarms     -0.224 -0.285 -0.162
+   level     post_hit     -0.287 -0.316 -0.258
+variance total_alarms     -0.066 -0.128 -0.003
+variance     post_hit      0.007 -0.005  0.019
+status {'n': 1000, 'null_alarm_gap': 0.03200000000000003, 'null_matched_under_second_stage_tol_0p15': True, 'note': 'third-stage exploratory follow-up after seeing first and second results, not preregistered overall'}

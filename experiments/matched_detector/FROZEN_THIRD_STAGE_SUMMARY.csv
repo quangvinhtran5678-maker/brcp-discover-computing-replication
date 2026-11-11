@@ -1,0 +1,7 @@
+scenario,space,n,alarms_per800,post_hit_prob,median_delay
+level,data,1000,1.656,0.974,17.0
+level,score,1000,1.432,0.687,44.0
+null,data,1000,0.492,0.077,62.0
+null,score,1000,0.524,0.075,66.0
+variance,data,1000,1.652,0.977,17.0
+variance,score,1000,1.586,0.984,3.0

@@ -1,0 +1,3 @@
+kind,n_series,note,mean_diff,lower,upper
+level,36,exploratory cluster bootstrap by series,0.006481481481481484,0.0014814814814814836,0.011148611111111111
+variance,36,exploratory cluster bootstrap by series,-0.028370370370370372,-0.03661388888888889,-0.019795370370370376

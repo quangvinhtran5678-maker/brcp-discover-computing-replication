@@ -1,0 +1,1 @@
+{"row": {"case": "illness_col002_level", "dataset": "illness", "col_idx": 2, "kind": "level", "method": "SAOCP_score_port", "n_eval": 410, "coverage": 0.926829268292683, "width": 2591.287022205062, "winkler": 3170.243117355152, "n_events": 1}, "events": [{"case": "illness_col002_level", "dataset": "illness", "kind": "level", "event_idx": 0, "miscoverage100": 0.08}]}

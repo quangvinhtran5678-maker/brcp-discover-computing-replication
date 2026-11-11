@@ -1,0 +1,10 @@
+dataset,col,kind,method,tau,misscov_post50,misscov_postH,n_postH,series_id
+illness,AGE 0-4,variance,SplitCP,686,0.84,0.6733333333333333,150,illness|AGE 0-4
+illness,AGE 0-4,variance,RollingCP,686,0.7,0.41333333333333333,150,illness|AGE 0-4
+illness,AGE 0-4,variance,ACI(0.005),686,0.48,0.20666666666666667,150,illness|AGE 0-4
+illness,AGE 0-4,variance,ACI(0.05),686,0.24,0.12666666666666668,150,illness|AGE 0-4
+illness,AGE 0-4,variance,AgACI,686,0.24,0.12666666666666668,150,illness|AGE 0-4
+illness,AGE 0-4,variance,ConformalPID,686,0.5,0.30666666666666664,150,illness|AGE 0-4
+illness,AGE 0-4,variance,BRCP,686,0.16,0.14,150,illness|AGE 0-4
+illness,AGE 0-4,variance,BRCP-safe,686,0.16,0.12666666666666668,150,illness|AGE 0-4
+illness,AGE 0-4,variance,BRCP-data,686,0.32,0.16,150,illness|AGE 0-4

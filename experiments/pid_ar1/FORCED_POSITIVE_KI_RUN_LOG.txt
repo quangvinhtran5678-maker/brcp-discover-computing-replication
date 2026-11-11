@@ -1,0 +1,11 @@
+FORCED positive integral selected on dev only: 0.1 0.1
+DONE 36
+DONE 72
+DONE 108
+          n_series  coverage_pid  ...  zero_radius  tangent_caps
+kind                              ...                           
+level           36      0.896299  ...         1094             0
+none            36      0.896362  ...         1508             0
+variance        36      0.892748  ...         1058             0
+
+[3 rows x 6 columns]

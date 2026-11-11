@@ -1,0 +1,9 @@
+{
+  "n_cases": 108,
+  "n_events": 564,
+  "source_zip_sha256": "bb0c3e1527ce04857cdaa9bc1f4bf621f91986297ba4c45df1efe61f9bc17a9e",
+  "baseline_sha256": "7defdbd1532740d32e9dac9437df9d8b0b52320ff102123696945ee13f476d60",
+  "code_sha256": "0a6aea10f373f9825273e03846c87877bea5cb03651b0076bacef2004b217e94",
+  "checkpoint_count": 108,
+  "algorithm": "Salesforce SAOCP score-only source-derived port, not direct official package"
+}

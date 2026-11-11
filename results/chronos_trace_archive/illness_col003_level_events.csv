@@ -1,0 +1,10 @@
+dataset,col,kind,method,tau,misscov_post50,misscov_postH,n_postH,series_id
+illness,AGE 5-24,level,SplitCP,686,0.08,0.16,150,illness|AGE 5-24
+illness,AGE 5-24,level,RollingCP,686,0.1,0.17333333333333334,150,illness|AGE 5-24
+illness,AGE 5-24,level,ACI(0.005),686,0.12,0.17333333333333334,150,illness|AGE 5-24
+illness,AGE 5-24,level,ACI(0.05),686,0.1,0.12666666666666668,150,illness|AGE 5-24
+illness,AGE 5-24,level,AgACI,686,0.08,0.12666666666666668,150,illness|AGE 5-24
+illness,AGE 5-24,level,ConformalPID,686,0.1,0.14666666666666667,150,illness|AGE 5-24
+illness,AGE 5-24,level,BRCP,686,0.1,0.12,150,illness|AGE 5-24
+illness,AGE 5-24,level,BRCP-safe,686,0.1,0.12,150,illness|AGE 5-24
+illness,AGE 5-24,level,BRCP-data,686,0.16,0.15333333333333332,150,illness|AGE 5-24

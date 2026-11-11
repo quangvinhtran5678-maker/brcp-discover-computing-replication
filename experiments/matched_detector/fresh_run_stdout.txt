@@ -1,0 +1,16 @@
+Protocol SHA256: 2e239472b25685aa056fb433c722929e30589abe69b174a8dc1d33a0d3410d64
+Frozen selected: {'data': 16.0, 'score': 5.0}
+scenario detector    h  n_seeds  alarms_per800  mean_pre_alarm_count  probability_post_alarm  median_delay_conditional
+   level     data 16.0      300       1.260000              0.056667                0.983333                      19.0
+   level    score  5.0      300       1.436667              0.260000                0.706667                      38.5
+    null     data 16.0      300       0.176667              0.056667                0.030000                      79.0
+    null    score  5.0      300       0.530000              0.260000                0.056667                      40.0
+variance     data 16.0      300       1.306667              0.056667                0.973333                      24.0
+variance    score  5.0      300       1.600000              0.260000                0.980000                       3.0
+scenario                                          measure      mean    ci95lo    ci95hi  n_seeds
+    null              alarms_per800_diff_score_minus_data  0.353333  0.250000  0.453333      300
+    null post_detection_probability_diff_score_minus_data  0.026667 -0.006667  0.056667      300
+   level              alarms_per800_diff_score_minus_data  0.176667  0.083250  0.270000      300
+   level post_detection_probability_diff_score_minus_data -0.276667 -0.326667 -0.226583      300
+variance              alarms_per800_diff_score_minus_data  0.293333  0.193333  0.396667      300
+variance post_detection_probability_diff_score_minus_data  0.006667 -0.016667  0.033333      300

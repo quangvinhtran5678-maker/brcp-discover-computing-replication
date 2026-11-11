@@ -1,0 +1,1 @@
+{"row": {"case": "illness_col005_variance", "dataset": "illness", "col_idx": 5, "kind": "variance", "method": "SAOCP_score_port", "n_eval": 410, "coverage": 0.9341463414634146, "width": 544.2087679684155, "winkler": 751.2450326589495, "n_events": 1}, "events": [{"case": "illness_col005_variance", "dataset": "illness", "kind": "variance", "event_idx": 0, "miscoverage100": 0.12}]}
