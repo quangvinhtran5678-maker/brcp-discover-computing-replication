@@ -1,0 +1,18 @@
+Revision-analysis evidence: 2026-11-10
+
+Outputs in results/ were computed from originally archived per-offset simulation/real benchmark error arrays and an independent detector-plus-reset-only synthetic ablation.
+
+Scope of evidence:
+ - Series-level bootstrap groups windows within the same target series.
+ - CD nonlinear plug-in estimates can have upward bootstrap bias. Paired differences are more interpretable than standalone method intervals.
+ - Detector + reset only is an internal implementation ablation; not the published Calleo implementation.
+ - It uses original generator and 200 seeds for each 7 x 3 configuration; R1/R3/boost disabled, detected memory reset enabled.
+
+Not included / not claimed:
+ - Matched no-break false-alarm score/data-space experiment (incomplete).
+ - Local score diagnostics for real dated events (raw series not included in this package).
+ - Published BOA-AgACI, scorecaster PID, and SAOCP head-to-head runs.
+ - Full raw time-series dataset CSV files; download details appear in README.txt.
+
+Reproduce analyses with Python dependencies in requirements.txt, starting at the archive's root.
+Scripts in revision_analysis/scripts use paths relative to this package.

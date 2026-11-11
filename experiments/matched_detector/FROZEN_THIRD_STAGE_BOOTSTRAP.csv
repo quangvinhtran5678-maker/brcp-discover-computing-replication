@@ -1,0 +1,7 @@
+scenario,measure,mean_diff,lo,hi
+null,total_alarms,0.032,-0.027,0.093
+null,post_hit,-0.002,-0.025,0.02
+level,total_alarms,-0.224,-0.285,-0.162
+level,post_hit,-0.287,-0.316,-0.258
+variance,total_alarms,-0.066,-0.128,-0.003
+variance,post_hit,0.007,-0.005,0.019

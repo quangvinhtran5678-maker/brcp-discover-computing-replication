@@ -1,0 +1,9 @@
+{
+  "frozen_selected": {
+    "data": 16.0,
+    "score": 5.0
+  },
+  "test_null_rate_gap": 0.3533333333333334,
+  "test_null_matched_within_tolerance": false,
+  "qualification": "standalone synthetic AR1 detector-only new holdout; not Chronos model or coverage"
+}
