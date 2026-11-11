@@ -1,18 +1,18 @@
-# Release completeness audit — 11 November 2026
+# BR-CP public replication archive: verified completeness (11 November 2026)
 
-**Release status: INCOMPLETE; not yet ready for a full reproducibility claim.** Checked directly against `SHA256SUMS.txt` and the GitHub recursive tree.
+**Archive status: COMPLETE AS A RELEASE FILE SET, NOT A COMPLETE SCIENTIFIC VALIDATION.**
 
-- Expected release files in the SHA-256 manifest: **958**.
-- GitHub files at latest completed audit: **632** (including manifest and this audit document).
-- Missing expected release files: **328**.
-- Published Chronos forecast cache files: **31**; additional model-derived cache binaries and historical `.npz` files are pending.
-- Missing material includes 8 PDFs (manuscript and figures) and 320 files under `results/`.
-- Raw third-party benchmark CSVs are intentionally *not* part of this release.
+The public GitHub archive was checked against the audited local release and immutable Git object identifiers after the final Colab sync.
 
-The repository does contain the BR-CP research code and numerous CSV results. The legacy (off-by-one) Chronos quantile results must not be cited in place of corrected results. Source-derived baseline implementations are not identical to all original official packages, and neither exact original ridge training-data provenance nor precise train/test overlap of the pinned Chronos model has been fully established.
+- Original release manifest: `SHA256SUMS.txt`, enumerating **958** files.
+- Every one of the 958 release files was present at commit `c39310a9ab5764d564d952aaefb946c5a0d7b49f`.
+- All 958 local release bytes matched their listed SHA-256 values.
+- For all 958 files, the GitHub Git blob SHA-1s matched the SHA-1s computed from those locally SHA-256-verified bytes. The ordered path + Git object listing checksum (FNV-1a 64) was `dfa97dc01eb792f4` on both sides.
+- The commit tree contained 960 files, the 958 listed release files plus `SHA256SUMS.txt` and this operational audit document.
+- The user-facing journal manuscript and Point-by-Point Response are **separate private submission documents**; they are not part of the public research archive. The current submit-ready manuscript may differ in GitHub URL wording from the archival `paper/main.tex` without changing experimental outputs.
 
-**To complete this archive:** sync the audited release ZIP from Google Drive onto the existing repository using an incremental, non-force commit; then independently verify every file against `SHA256SUMS.txt`. Only after all expected paths and hashes match should a pinned commit be inserted into the manuscript as complete code availability.
+**Methodological boundaries remain open:** source-identical BOA/pinball AgACI and original Theta-scorecaster PID runs are not reproduced here; matched detector operation on the actual natural series is unconfirmed; the exact historical global-ridge training-input versions were not reconstructed; exact six-file Chronos training-corpus disjointness was not independently proven. Experimental advantages and failures are documented rather than selectively removed.
 
-**Repository:** https://github.com/quangvinhtran5678-maker/brcp-discover-computing-replication
+Raw third-party benchmark CSVs and private reviewer/editor correspondence were intentionally not redistributed.
 
-This document records a snapshot, not an always-live counter. Do not change scientific claims based solely on repository file counts.
+This document supersedes its earlier interim snapshot that reported 359 and later 328 missing files. The completed file transfer does **not** imply that reviewers must accept all methodological claims.
