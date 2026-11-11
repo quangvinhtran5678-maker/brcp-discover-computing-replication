@@ -1,14 +1,18 @@
-# Repository completeness audit — 11 November 2026
+# Release completeness audit — 11 November 2026
 
-This is an automatically checked release-status snapshot. **Do not use this repository as a complete replication archive until all expected files are present and their SHA-256 hashes have been verified.**
+**Release status: INCOMPLETE; not yet ready for a full reproducibility claim.** Checked directly against `SHA256SUMS.txt` and the GitHub recursive tree.
 
-- Expected hashed release files: **958** (see `SHA256SUMS.txt`).
-- Files listed by the recursive Git tree during this audit: **600** (including `SHA256SUMS.txt`).
-- Expected files not present at audit time: **359**.
-- Missing files include PDF figures/manuscript outputs and model-derived Chronos `.npz` forecast caches.
-- Historical and exploratory evidence must remain labelled distinctly from corrected results.
-- The original benchmark CSVs are intentionally excluded from distribution. Missing benchmark raw files are *not* counted among the 359 expected release files.
-- The original Chronos evaluation quantile bug has been corrected in the separately labelled corrected results.
-- Not all original published third-party baselines are reproduced exactly; see the scientific caveats in README.
+- Expected release files in the SHA-256 manifest: **958**.
+- GitHub files at latest completed audit: **632** (including manifest and this audit document).
+- Missing expected release files: **328**.
+- Published Chronos forecast cache files: **31**; additional model-derived cache binaries and historical `.npz` files are pending.
+- Missing material includes 8 PDFs (manuscript and figures) and 320 files under `results/`.
+- Raw third-party benchmark CSVs are intentionally *not* part of this release.
 
-**Action required before code availability can be asserted:** finish uploading the expected files, verify every listed SHA-256 hash, and pin the verified commit SHA in the manuscript. This status document should be updated once the checks pass.
+The repository does contain the BR-CP research code and numerous CSV results. The legacy (off-by-one) Chronos quantile results must not be cited in place of corrected results. Source-derived baseline implementations are not identical to all original official packages, and neither exact original ridge training-data provenance nor precise train/test overlap of the pinned Chronos model has been fully established.
+
+**To complete this archive:** sync the audited release ZIP from Google Drive onto the existing repository using an incremental, non-force commit; then independently verify every file against `SHA256SUMS.txt`. Only after all expected paths and hashes match should a pinned commit be inserted into the manuscript as complete code availability.
+
+**Repository:** https://github.com/quangvinhtran5678-maker/brcp-discover-computing-replication
+
+This document records a snapshot, not an always-live counter. Do not change scientific claims based solely on repository file counts.
